@@ -1,0 +1,441 @@
+@charset "UTF-8";
+/*mobile first  de 0px-500px*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(163, 179, 202);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: url(../img/fondo.jpeg) center/cover no-repeat;
+  min-height: 200px;
+  padding-top: 40vh;
+  text-align: center;
+}
+
+.navegacion {
+  background-color: rgb(8, 8, 8);
+}
+
+.navegacion ul li {
+  list-style-type: none;
+}
+
+.navegacion ul li a {
+  color: #f6f6f6;
+  margin: 0 100px;
+  font-size: 1rem;
+  font-style: italic;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 grey;
+}
+
+.navegacion a:hover { /* HOVER DISPARA EL EVENTO DE CUANDO PASO CON EL MOUSE POR ENCIMA DEL NOMBRE */
+  color: rgb(166, 236, 52);
+  transition: 0.5s;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(19, 51, 26);
+  font-weight: bold;
+  text-shadow: 2px 2px 0 black; /* SOMBREADO */
+  margin: 0;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 0 rgb(102, 105, 99);
+}
+
+h3 {
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  color: rgb(56, 54, 54);
+}
+
+h4 {
+  text-align: start;
+  font-size: 15px;
+  color: darkslategray;
+  text-transform: uppercase;
+}
+
+h5 {
+  text-align: start;
+  font-size: 15px;
+  color: darkslategray;
+}
+
+.contacto-descripcion {
+  align-content: center;
+  background-color: yellowgreen;
+}
+
+.descripcion {
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(120, 155, 120);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5fr;
+  width: 100%;
+}
+
+.servi {
+  border-radius: 20px;
+  background-color: #fcf3f6;
+  color: black;
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.servicios-descripcion p {
+  font-style: italic;
+  font-size: 1.5rem;
+  align-content: center;
+  color: rgb(12, 32, 12);
+}
+
+.servicios p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans";
+  font-size: 1rem;
+  color: darkslateblue;
+}
+
+.desc_contacto {
+  padding: 40px 40px 40px 40px;
+}
+
+/** FORMULARIO **/
+* {
+  box-sizing: border-box;
+}
+
+form {
+  width: 190px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #ccc;
+}
+
+form label {
+  width: 32px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+form input[type=text],
+form input[type=email] {
+  width: 150px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form input[type=submit] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #000;
+}
+
+form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  resize: none;
+  display: block;
+}
+
+.contacto_grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-template-columns: 140px 140px 140px 140px;
+}
+
+/*form{
+    width:300px;
+    padding:16px;
+    border-radius:10px;
+    margin:auto;
+    background-color:#ccc;
+}
+
+form label{
+    width:72px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+    width:180px;
+    padding:3px 10px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;
+    margin:8px 0;
+    display:inline-block;
+}
+
+form input[type="submit"]{
+    width:100%;
+    padding:8px 16px;
+    margin-top:32px;
+    border:1px solid #000;
+    border-radius:5px;
+    display:block;
+    color:#fff;
+    background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+    cursor:pointer;
+}
+
+textarea{
+    width:100%;
+    height:100px;
+    border:1px solid #f6f6f6;
+    border-radius:3px;
+    background-color:#f6f6f6;			
+    margin:8px 0;
+    resize:none;
+    display:block;
+}
+*/
+.imagen {
+  background-image: url(/img/ca0c5741-bb9d-437f-a17c-00bb376ab198.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 30rem;
+}
+
+.imagen-fondo {
+  width: 60%;
+  height: 50%;
+}
+
+section p {
+  font-size: 10px;
+  color: white;
+  line-height: 25px;
+}
+
+.footer {
+  background-image: linear-gradient(to right, green, white);
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+}
+
+footer ul li a.ig {
+  background: url(../img/icons8-instagram-48.png) center/contain no-repeat;
+}
+
+footer ul li a.fb {
+  background: url(../img/icons8-facebook-rodeado-de-círculo-48.png) center/contain no-repeat;
+}
+
+.nosotros-descripcion {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: green;
+}
+
+.producto {
+  background-color: rgb(39, 53, 12);
+  padding: 1rem;
+}
+
+.producto__imagen {
+  width: 350px;
+  height: 300px;
+  border: 8px solid #1d28c7;
+  margin-top: 15px;
+  margin-left: 90px;
+}
+
+.producto_nombre {
+  font-size: 4rem;
+}
+
+.producto__precio {
+  font-size: 2.8rem;
+}
+
+.producto__nombre,
+.producto__precio {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 1, 2;
+  color: rgb(83, 130, 168);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* 500 px en ADELANTE */
+@media (min-width: 500px) {
+  .navegacion ul a {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px;
+  }
+  section p {
+    font-size: 15px;
+  }
+  footer ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  form {
+    width: 200px;
+    padding: 20px;
+  }
+  form label {
+    width: 50px;
+    font-weight: bold;
+  }
+  .producto__imagen {
+    width: 450px;
+    height: 400px;
+    margin-left: 150px;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    background: url(../img/fondo.jpeg) center/cover no-repeat;
+    min-height: 400px;
+    padding-top: 40vh;
+    text-align: center;
+  }
+  .navegacion ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 10px;
+  }
+  .navegacion li {
+    width: 150px;
+  }
+  .servi {
+    margin: 10px;
+    padding: 25px;
+  }
+  .servicios p {
+    font-size: 1.5rem;
+  }
+  .contacto_grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 180px 180px 180px 180px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  form {
+    width: 300px;
+    padding: 30px;
+  }
+  form label {
+    width: 70px;
+  }
+  .grid {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    gap: 2rem;
+  }
+  .grafico {
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/3;
+  }
+  .grafico--productos {
+    grid-row: 2/3;
+  }
+}/*# sourceMappingURL=estilos.css.map */
