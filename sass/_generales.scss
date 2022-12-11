@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin:0;
+  }
+
+  header{
+    background: url(../img/fondo.jpeg) center/cover no-repeat;
+    min-height: 200px;
+    padding-top: 40vh;
+    text-align: center;    
+   
+  }
+  
+  
+  html {   
+      box-sizing: border-box;
+      font-size: 62.5%;
+    }
+  
+    body {
+      background-color: rgb(163, 179, 202);
+      font-size: 1.6rem;                
+      line-height: 1.5; 
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+  
+  }

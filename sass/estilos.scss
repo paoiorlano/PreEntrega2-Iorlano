@@ -1,55 +1,16 @@
 /*mobile first  de 0px-500px*/
-*{
-    padding: 0;
-    margin:0;
-  }
-  
-  
-  html {   
-      box-sizing: border-box;
-      font-size: 62.5%;
-    }
-  
-    body {
-      background-color: rgb(163, 179, 202);
-      font-size: 1.6rem;                
-      line-height: 1.5; 
-      width: 100%;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-  
-  }
-  
-    header{
-      background: url(../img/fondo.jpeg) center/cover no-repeat;
-      min-height: 200px;
-      padding-top: 40vh;
-      text-align: center;    
-     
-    }
+@import "generales";
+@import "mediaq";
+
+    
       
-    .navegacion {
-      background-color: rgb(8, 8, 8);
-    }
+    
     
     
    
-  .navegacion ul li{
-    
-    list-style-type: none;
-  }
+ 
   
-  .navegacion ul li a{
-      color: #f6f6f6;
-      margin: 0 100px;
-      font-size: 1rem;
-      font-style: italic;
-      text-decoration: none;
-      text-transform: uppercase;
-      text-shadow: 1px 1px 0 grey;
-  }
-   
+ 
     .navegacion a:hover {    /* HOVER DISPARA EL EVENTO DE CUANDO PASO CON EL MOUSE POR ENCIMA DEL NOMBRE */
       color: rgb(166, 236, 52);
       transition: 0.5s;
@@ -289,37 +250,11 @@
   
   
   
-  .footer{
-    background-image: linear-gradient(to right, green, white);
-    
-  }
   
-  footer ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
   
-  }
+ 
   
-  footer ul li{
-    display: inline-block;
-  }
   
-  footer ul li a{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    font-size: 0;
-  }
-  footer ul li a.ig{
-    background: url(../img/icons8-instagram-48.png) center/contain no-repeat;
-    
-    
-  }
-  footer ul li a.fb{
-    background: url(../img/icons8-facebook-rodeado-de-círculo-48.png) center/contain no-repeat;
-  }
   .nosotros-descripcion{
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
@@ -368,26 +303,13 @@
   
   
   /* 500 px en ADELANTE */
-  @media(min-width:500px){
-    .navegacion ul a{
-      list-style-type: none;
-      display: flex;
-      justify-content: space-around;
-      margin: 0px;
-      padding: 0px;
-    }
+  
     
     section p{
       font-size: 15px;
     }
   
-    footer ul li a{
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      font-size: 0;
-    }
-  
+    
     h2{
       font-size: 20px;
     }
@@ -412,9 +334,9 @@
       height: 400px;
       margin-left: 150px;
     }
-  }
   
-  @media (min-width:768px){
+  
+  /**768**/
     header{
       background: url(../img/fondo.jpeg) center/cover no-repeat;
       min-height: 400px;
@@ -422,19 +344,7 @@
       text-align: center;
          
     }
-    
-    
-    .navegacion ul{
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      margin: 0px;
-      padding: 10px;
-    }
   
-    .navegacion li{
-      width: 150px;
-    }
   
     .servi{
       margin: 10px;
@@ -486,4 +396,4 @@
       grid-row: 2 / 3;
     }
   
-  }
+  
