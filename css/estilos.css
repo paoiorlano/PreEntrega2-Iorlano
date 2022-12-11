@@ -199,6 +199,8 @@ form {
   form {
     width: 300px;
     padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -356,7 +358,10 @@ section p {
   transition: 0.5s;
 }
 
+/*mixin*/
 .contacto-descripcion {
+  height: 70px;
+  width: auto;
   align-content: center;
   background-color: yellowgreen;
 }

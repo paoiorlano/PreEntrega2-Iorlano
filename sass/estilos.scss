@@ -10,9 +10,17 @@
     }
     
   
+  /*mixin*/
+
+  @mixin size ($width, $height){
+    height: $height;
+    width: $width;
+  }
+
   .contacto-descripcion{
+    @include size (auto, 70px);
     align-content: center;
-    background-color: yellowgreen;
+    background-color: yellowgreen ;
   }
  
   .servicios{
